@@ -25,7 +25,7 @@
     },
     "API_KEY": {
       "description": "Heroku api key",
-      " value":""
+      " value":"HRKU-30c4d4a9-ad27-4945-9d27-f4a3a0a422b2"
       "required": false
     },
     "OWNER_ID": {
