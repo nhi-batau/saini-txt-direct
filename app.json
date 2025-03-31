@@ -1,0 +1,69 @@
+{
+  "name": "TXT UPLOADER",
+  "repository": "https://github.com/abhiguru143",
+  "description": "A telegram Bot for downloading videos from various websites. Created by MadXABhi",
+  "addons": [],
+  "env": {
+    "API_ID": {
+      "description": "TG API_ID",
+      "value": "20114039",
+      "required": false
+    },
+    "API_HASH": {
+      "description": "TG API HASH",
+      "value": "87297b8f3cc8fc9bbce591ad30da5896",
+      "required": false
+    },
+    "BOT_TOKEN": {
+      "description": "Get your bot token by talking to @Botfather",
+      "value":" 7468678146:AAHiJc-Gp-T9ACMfwcBysTcpzlC9SY8Lg1I"
+      "required": false
+    },
+    "APP_NAME": {
+      "description": "Heroku app name",
+      "required": false
+    },
+    "API_KEY": {
+      "description": "Heroku api key",
+      " value":""
+      "required": false
+    },
+    "OWNER_ID": {
+      "description": "who will use this bot",
+      "value": "8172163893",
+      "required": false
+    },
+    "FR_TOKEN": {
+      "description": "FR_TOKEN",
+      "value": "f4f0e3047723385244d3aae0068d60ec09f79345",
+      "required": true
+    },
+    "credits": {
+      "description": "Give credit",
+      "value": "",
+      "required": false
+    },
+    "GROUP_IDS": {
+      "value": "",
+      "description": "Group Ids seperated by space",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "https://github.com/amivin/aria2-heroku.git"
+    }
+  ]
+}
